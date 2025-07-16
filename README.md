@@ -11,10 +11,8 @@ The project addresses the growing need for organized and accessible tools to man
 - 🔐 **User Authentication** – Signup/login with hashed passwords and secure sessions
 - 🐾 **Species Directory** – Species cards with integrated image gallery
 - 📍 **Location Management** – Link species with habitats and regions via dynamic data modeling
-- 📈 **Population Trend Tracking** – Year-wise updates on species population via user-submitted reports
 - 📸 **Contribution System** – Users can upload field reports and images through an intuitive form
 - 🤝 **Community Integration** – Join communities tied to specific regions; track regional contributions and donations
-- 💰 **Donation Tracking** – Log and associate donations with users and communities
 - 🔄 **Triggers and Procedures (PL/SQL)** – Smart automation:
   - Assign padded user IDs like `001`, `002`, etc.
   - Automatically link users to community tables
@@ -52,10 +50,19 @@ The project addresses the growing need for organized and accessible tools to man
 
 ## 🖼️ Screenshots
 
-- Home page with dynamic species gallery and background
+- Home page and Species page with dynamic species gallery and background
+  ![Home Page](Documentation/screenshots/home-page.png)
+  ![Species Page](Documentation/screenshots/species-gallery.png)
+- Signup page with password hashing and community selection
+  ![Sign up Page](Documentation/screenshots/signup.png)
+  ![community dropdown display](Documentation/screenshots/community-dropdown.png)
+- Sign in page
+  ![Sign in Page](Documentation/screenshots/signin.png)
 - Contribution form with image upload and community dropdown
-- Dashboard displaying user's reports as visual cards
-- Admin newsletter and donations overview
+  ![Contribution Page](Documentation/screenshots/contribution.png)
+- Dashboard with view contribution section displaying user's reports as visual cards
+  ![Dashboard Page](Documentation/screenshots/dashboard.png)
+  ![My Contributions Page](Documentation/screenshots/view-contribution.png)
 
 ## 🤝 Team Members
 
@@ -66,7 +73,9 @@ The project addresses the growing need for organized and accessible tools to man
 
 - Admin dashboard for contribution moderation and analytics
 - Admin-generated updates and news articles for conservation developments  
-- Search functionality on species and community pages  
+- Search functionality on species and community pages
+- Year-wise updates on species population via user-submitted reports
+- Log and associate donations with users and communities
 - GIS-based mapping integration for region and habitat visualization  
 
 ---
