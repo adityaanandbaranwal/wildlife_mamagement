@@ -23,7 +23,7 @@ The project addresses the growing need for organized and accessible tools to man
 
 ## 🛠️ Tech Stack
 
-- **Frontend**: HTML, CSS, Bootstrap, JavaScript
+- **Frontend**: HTML, CSS, Bootstrap
 - **Backend**: Flask (Python), Jinja2 templating
 - **Database**: MySQL with stored procedures and triggers
 - **ORM**: SQLAlchemy
@@ -68,10 +68,6 @@ The project addresses the growing need for organized and accessible tools to man
 - Admin-generated updates and news articles for conservation developments  
 - Search functionality on species and community pages  
 - GIS-based mapping integration for region and habitat visualization  
-
-## 📄 License
-
-This project is open-source and available under the [MIT License](LICENSE).
 
 ---
 
