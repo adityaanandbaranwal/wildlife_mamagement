@@ -1,0 +1,39 @@
+{% extends "base.html" %}
+{% block title %}Species{% endblock %}
+{% block content %}
+<div class="row">
+  <div class="col-md-3">
+    <h4>Filter By</h4>
+    <form method="GET">
+      <div class="form-group">
+        <label for="habitat">Habitat</label>
+        <input type="text" name="habitat" class="form-control">
+      </div>
+      <div class="form-group">
+        <label for="region">Region</label>
+        <input type="text" name="region" class="form-control">
+      </div>
+      <button type="submit" class="btn btn-primary">Filter</button>
+    </form>
+  </div>
+  <div class="col-md-9">
+    <h3>Species List</h3>
+    <div class="row">
+      {% for sp in species %}
+      <div class="col-md-4">
+        <div class="card mb-4">
+          <!-- The image source is generated dynamically using sp.Species_ID -->
+          <img src="{{ url_for('static', filename='images/' ~ sp.Species_ID ~ '.jpg') }}" class="card-img-top" alt="{{ sp.EnglishName }}">
+          <img src="{{ url_for('static', filename='images/' ~ sp.Species_ID ~ '.jpeg') }}" class="card-img-top" alt="{{ sp.EnglishName }}">
+          <div class="card-body">
+            <h5 class="card-title">{{ sp.EnglishName }}</h5>
+            <p class="card-text">{{ sp.LocalName }}</p>
+            <a href="#" class="btn btn-primary">Details</a>
+          </div>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</div>
+{% endblock %}

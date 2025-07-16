@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+{% block title %}Dashboard{% endblock %}
+{% block content %}
+<h2>Dashboard</h2>
+<p>Welcome, {{ current_user.UserName }}!</p>
+<div class="list-group">
+  <a href="{{ url_for('user_routes.view_contributions') }}" class="list-group-item list-group-item-action">View Contributions</a>
+  <a href="{{ url_for('contribution_routes.new_contribution') }}" class="list-group-item list-group-item-action">Make a New Contribution/Report</a>
+</div>
+{% endblock %}

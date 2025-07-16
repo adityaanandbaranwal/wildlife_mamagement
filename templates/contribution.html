@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+{% block title %}New Contribution{% endblock %}
+{% block content %}
+<h2>New Contribution / Report</h2>
+<form method="POST" enctype="multipart/form-data">
+  {{ form.hidden_tag() }}
+  <div class="form-group">
+    {{ form.date.label(class="form-label") }}
+    {{ form.date(class="form-control") }}
+  </div>
+  <div class="form-group">
+    {{ form.observation_type.label(class="form-label") }}
+    {{ form.observation_type(class="form-control") }}
+  </div>
+  <div class="form-group">
+    <!-- File upload for image -->
+    {{ form.image.label(class="form-label") }}
+    {{ form.image(class="form-control-file") }}
+  </div>
+  <div class="form-group">
+    {{ form.report.label(class="form-label") }}
+    {{ form.report(class="form-control", rows="5") }}
+  </div>
+  <div class="form-group">
+    {{ form.community.label(class="form-label") }}
+    {{ form.community(class="form-control") }}
+  </div>
+  {{ form.submit(class="btn btn-primary") }}
+</form>
+{% endblock %}

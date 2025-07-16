@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+{% block title %}Delete Account{% endblock %}
+{% block content %}
+<div class="container mt-5">
+  <h2>Confirm Account Deletion</h2>
+  <p>Are you sure you want to delete your account? This action cannot be undone.</p>
+  <form method="POST">
+    <button type="submit" class="btn btn-danger">Yes, Delete My Account</button>
+    <a href="{{ url_for('user_routes.dashboard') }}" class="btn btn-secondary">Cancel</a>
+  </form>
+</div>
+{% endblock %}
