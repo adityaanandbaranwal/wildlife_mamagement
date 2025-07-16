@@ -1,6 +1,6 @@
 # 🌿 Wildlife Conservation Platform
 
-A comprehensive web-based platform designed to support wildlife tracking, conservation efforts, and community engagement. Built as a team project by **Aditya** and **Anushka**, this system brings together the power of data-driven decision making and user contributions to support biodiversity conservation.
+A personal copy of the comprehensive web-based platform designed to support wildlife tracking, conservation efforts, and community engagement. Built as a team project by **Aditya** and **Anushka**, this system brings together the power of data-driven decision making and user contributions to support biodiversity conservation.
 
 ## 🧠 Motivation
 
