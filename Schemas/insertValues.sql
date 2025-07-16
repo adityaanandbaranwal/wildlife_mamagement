@@ -66,49 +66,27 @@ INSERT INTO Region (State, City_Village) VALUES
 ('Bihar', 'Valmikinagar'),
 ('Punjab', 'Harike');
 
-INSERT INTO Communities (CommunityName, No_of_Users, Total_contributions, Total_donations) VALUES
-('Wildlife Conservation India', 0, 0, 0),
-('Green Earth Foundation', 0, 0, 0),
-('Clean Rivers Initiative', 0, 0, 0),
-('Save the Tigers', 0, 0, 0),
-('Forest Conservation Society', 0, 0, 0),
-('Earth Warriors', 0, 0, 0),
-('Plastic-Free India', 0, 0, 0),
-('Ganga Rejuvenation Project', 0, 0, 0),
-('Urban Green Spaces India', 0, 0, 0),
-('Eco Warriors Network', 0, 0, 0),
-('Himalayan Wildlife Rescue', 0, 0, 0),
-('Clean Air India', 0, 0, 0),
-('Coastal Conservation Trust', 0, 0, 0),
-('Earth First India', 0, 0, 0),
-('Green India Foundation', 0, 0, 0),
-('Save Our Soil Initiative', 0, 0, 0),
-('Water Conservation Council', 0, 0, 0),
-('Clean India Movement', 0, 0, 0),
-('Sustainable Agriculture India', 0, 0, 0),
-('Nature Conservation Collective', 0, 0, 0);
-
-INSERT INTO Location (Habitat_ID, Region_ID, Area, Conservation_Status, Climate) VALUES
-(1, 1, 5000.5, 'Protected', 'Tropical Monsoon'),  -- Sundarbans Mangrove Forest in Sundarbans
-(2, 1, 1200.0, 'Critical', 'Tropical Rainforest'),  -- Western Ghats in Sundarbans
-(3, 2, 3500.0, 'Vulnerable', 'Arid'),  -- Thar Desert in Kaziranga
-(4, 3, 2000.0, 'Protected', 'Alpine'),  -- Himalayan Alpine Meadows in Jaisalmer
-(5, 4, 2500.0, 'Endangered', 'Tropical Savanna'),  -- Kaziranga Floodplains in Nainital
-(6, 5, 1500.0, 'Critical', 'Arid'),  -- Rann of Kutch in Wayanad
-(7, 6, 1000.0, 'Protected', 'Tropical Rainforest'),  -- Keoladeo National Park Wetlands in Pollachi
-(8, 7, 1800.0, 'Vulnerable', 'Montane'),  -- Nilgiri Hills in Bhuj
-(1, 8, 3000.0, 'Protected', 'Tropical Monsoon'),  -- Sundarbans Mangrove Forest in Coringa
-(9, 9, 2200.0, 'Endangered', 'Tropical Rainforest'),  -- Jim Corbett Forest in Bandipur
-(10, 10, 2500.0, 'Critical', 'Tropical Rainforest'),  -- Andaman Tropical Rainforest in Chilika
-(11, 11, 1300.0, 'Vulnerable', 'Brackish'),  -- Chilika Lake in Kullu
-(12, 12, 1700.0, 'Critical', 'Alpine'),  -- Valley of Flowers in Cherrapunji
-(13, 13, 5000.0, 'Protected', 'Tropical Rainforest'),  -- Deccan Plateau in Kanha
-(14, 14, 3800.0, 'Vulnerable', 'Moist Forest'),  -- Sathyamangalam Forests in Tadoba
-(15, 15, 1600.0, 'Endangered', 'Tropical Rainforest'),  -- Loktak Lake in Moirang
-(16, 16, 4000.0, 'Protected', 'Tropical Rainforest'),  -- Anamalai Tiger Reserve in Ziro
-(17, 17, 2900.0, 'Critical', 'Tropical Monsoon'),  -- Nallamala Forest in Yuksom
-(18, 18, 2100.0, 'Protected', 'Temperate'),  -- Dachigam National Park in Dachigam
-(19, 19, 5500.0, 'Protected', 'Alpine');  -- Great Himalayan National Park in Valmikinagar
+INSERT INTO Communities (CommunityName, No_of_Users, Overall_contributions, Overall_donations) VALUES
+('Wildlife Conservation India', 1500, 120, 20000.50),
+('Green Earth Foundation', 1200, 250, 35000.75),
+('Clean Rivers Initiative', 800, 180, 15000.20),
+('Save the Tigers', 2200, 350, 50000.00),
+('Forest Conservation Society', 500, 90, 7000.10),
+('Earth Warriors', 3500, 500, 100000.00),
+('Plastic-Free India', 1500, 450, 32000.00),
+('Ganga Rejuvenation Project', 2000, 300, 15000.75),
+('Urban Green Spaces India', 600, 130, 8000.50),
+('Eco Warriors Network', 1000, 200, 25000.00),
+('Himalayan Wildlife Rescue', 400, 75, 5000.30),
+('Clean Air India', 1100, 160, 12000.00),
+('Coastal Conservation Trust', 700, 120, 15000.80),
+('Earth First India', 3000, 600, 80000.00),
+('Green India Foundation', 1300, 220, 15000.90),
+('Save Our Soil Initiative', 800, 100, 9000.00),
+('Water Conservation Council', 1000, 250, 22000.00),
+('Clean India Movement', 2500, 400, 65000.50),
+('Sustainable Agriculture India', 600, 150, 11000.00),
+('Nature Conservation Collective', 2000, 350, 45000.00);
 
 
 

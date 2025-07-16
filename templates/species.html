@@ -22,9 +22,7 @@
       {% for sp in species %}
       <div class="col-md-4">
         <div class="card mb-4">
-          <!-- The image source is generated dynamically using sp.Species_ID -->
-          <img src="{{ url_for('static', filename='images/' ~ sp.Species_ID ~ '.jpg') }}" class="card-img-top" alt="{{ sp.EnglishName }}">
-          <img src="{{ url_for('static', filename='images/' ~ sp.Species_ID ~ '.jpeg') }}" class="card-img-top" alt="{{ sp.EnglishName }}">
+          <img src="{{ url_for('static', filename='images/default_species.png') }}" class="card-img-top" alt="Species Image">
           <div class="card-body">
             <h5 class="card-title">{{ sp.EnglishName }}</h5>
             <p class="card-text">{{ sp.LocalName }}</p>

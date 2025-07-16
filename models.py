@@ -54,7 +54,6 @@ class Users(UserMixin, db.Model):
     Email_ID = db.Column(db.String(255), unique=True, nullable=False)
     UserName = db.Column(db.String(100), nullable=False)
     UserAddress = db.Column(db.Text)
-    SelectedCommunity = db.Column(db.String(10))
     PasswordHash = db.Column(db.String(255), nullable=False)
     No_of_donations = db.Column(db.Integer, default=0)
     No_of_contributions = db.Column(db.Integer, default=0)
@@ -95,8 +94,6 @@ class Contributions(db.Model):
     Image = db.Column(db.String(255))
     ObservationType = db.Column(db.String(255))
     Report = db.Column(db.Text)
-    Contributor_ID = db.Column(db.Integer, db.ForeignKey('Users.User_ID'), nullable=False)
-    ContributionCommunity = db.Column(db.String(10))  # will store the drop-down selected community
 
 class UserContributions(db.Model):
     __tablename__ = 'UserContributions'

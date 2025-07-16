@@ -1,7 +1,6 @@
 from flask_wtf import FlaskForm
 from wtforms import StringField, PasswordField, TextAreaField, SubmitField, DateField, SelectField
-from wtforms.validators import DataRequired, EqualTo, Length
-from flask_wtf.file import FileField, FileAllowed
+from wtforms.validators import DataRequired, Email, EqualTo, Length
 
 class LoginForm(FlaskForm):
     email = StringField('Email address', validators=[DataRequired()])
@@ -11,11 +10,9 @@ class LoginForm(FlaskForm):
 class SignupForm(FlaskForm):
     username = StringField('User Name', validators=[DataRequired(), Length(1, 64)])
     email = StringField('Email address', validators=[DataRequired()])
-    address = TextAreaField('Address')  # remains the same for free-form address input
+    address = TextAreaField('Region Address')
     password = PasswordField('Password', validators=[DataRequired(), Length(min=8)])
-    password2 = PasswordField('Repeat Password',
-                              validators=[DataRequired(), EqualTo('password', message="Passwords must match.")])
-    community = SelectField('Community', choices=[], validators=[DataRequired()])  # Dropdown for community selection
+    password2 = PasswordField('Repeat Password', validators=[DataRequired(), EqualTo('password', message="Passwords must match.")])
     submit = SubmitField('Sign Up')
 
 class ContributionForm(FlaskForm):
@@ -29,7 +26,6 @@ class ContributionForm(FlaskForm):
         ],
         validators=[DataRequired()]
     )
-    image = FileField('Upload Image', validators=[FileAllowed(['jpg', 'jpeg', 'png', 'gif'], 'Images only!')])
+    image = StringField('Image URL')
     report = TextAreaField('Report', validators=[DataRequired()])
-    community = SelectField('Your Community', choices=[], validators=[DataRequired()])
     submit = SubmitField('Submit Contribution')

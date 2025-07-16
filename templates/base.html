@@ -22,12 +22,6 @@
         <li class="nav-item"><a class="nav-link" href="{{ url_for('user_routes.dashboard') }}">Dashboard</a></li>
         {% if current_user.is_authenticated %}
           <li class="nav-item"><a class="nav-link" href="{{ url_for('user_routes.logout') }}">Logout</a></li>
-          <li class="nav-item">
-            <a class="nav-link" href="{{ url_for('user_routes.delete_account') }}"
-               onclick="return confirm('Are you sure you want to delete your account? This action cannot be undone.');">
-              Delete Account
-            </a>
-          </li>
         {% else %}
           <li class="nav-item"><a class="nav-link" href="{{ url_for('user_routes.login') }}">Sign In</a></li>
           <li class="nav-item"><a class="nav-link" href="{{ url_for('user_routes.signup') }}">Sign Up</a></li>

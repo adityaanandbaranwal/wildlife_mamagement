@@ -7,7 +7,3 @@ class Config(object):
     SQLALCHEMY_DATABASE_URI = os.environ.get('DATABASE_URL') or \
         'mysql://adiand:ludo.1234@localhost/wildlife_in_a_flask'
     SQLALCHEMY_TRACK_MODIFICATIONS = False
-
-    # New upload configuration
-    UPLOAD_FOLDER = os.path.join(basedir, 'static', 'uploads')
-    ALLOWED_EXTENSIONS = {'png', 'jpg', 'jpeg', 'gif'}
